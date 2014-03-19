@@ -1,13 +1,6 @@
 docker-osx
 ==========
 
-
-# WARNING
-
-This an unofficial docker helper made to simplify docker usage on OSX.
-
-# What is docker-osx
-
 Docker on OS X in three steps:
 
 1. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](http://www.vagrantup.com/downloads.html).
