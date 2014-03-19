@@ -14,7 +14,8 @@ Docker on OS X in three steps:
 
 2. Put the `docker-osx` script somewhere on your path:
 
-        curl https://raw.github.com/noplay/docker-osx/0.8.0/docker-osx > /usr/local/bin/docker-osx
+
+        curl https://raw.github.com/beRecruited/docker-osx/master/docker-osx > /usr/local/bin/docker-osx
         chmod +x /usr/local/bin/docker-osx
 
 3. Run:
@@ -25,7 +26,7 @@ Docker on OS X in three steps:
 
 This script acts as both an installer and as Virtual machine manager. On first run, it installs an OS X binary of the Docker client and starts a virtual machine with the Docker daemon running. It then sets up the shell environment so the Docker client knows to talk to the Docker daemon on the virtual machine.
 
-The virtual machine that Docker runs on is given the hostname `localdocker`. For example, if you run `docker run -p 8000:8000 ...`, then that will be available at `localdocker:8000` from OS X.
+The virtual machine that Docker runs on is given the hostname `berecruited.dev`. For example, if you run `docker run -p 8000:8000 ...`, then that will be available at `berecruited.dev:8000` from OS X.
 
 ## Additional commands
 
@@ -103,6 +104,18 @@ Default: `0.7.6`
 The URL used to download the docker client.
 
 Default: <http://get.docker.io/builds/Darwin/x86_64/docker-0.7.6.tgz>
+
+### DOCKER_CPUS
+
+The number of CPUs to allocate to the docker server VM
+
+Default: 4
+
+### DOCKER_MEMORY
+
+The amount of memory to allocate to the docker server VM
+
+Default: 4096
 
 ### VAGRANT_BOX_URL
 
